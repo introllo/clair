@@ -21,7 +21,8 @@ services:
       - /tmp:/tmp
       - ./clair_config:/config
     command: [-config, /config/config.yaml]
-    environment:
-      - HTTP_PROXY=http://proxy-chain.intel.com:911
-      - HTTPS_PROXY=http://proxy-chain.intel.com:912
+#    environment:
+#      - SOCKS_PROXY="http://proxy-us.intel.com:1080"
+#      - HTTP_PROXY=http://proxy-chain.intel.com:911
+#      - HTTPS_PROXY=http://proxy-chain.intel.com:912
 

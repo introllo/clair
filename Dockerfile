@@ -14,6 +14,9 @@
 
 FROM golang:1.8-alpine
 
+ENV http_proxy http://proxy-chain.intel.com:911
+ENV https_proxy http://proxy-chain.intel.com:912
+
 VOLUME /config
 EXPOSE 6060 6061
 
